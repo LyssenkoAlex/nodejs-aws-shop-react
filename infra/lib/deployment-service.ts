@@ -32,7 +32,7 @@ export class DeploymentService extends Construct {
             ],
         });
 
-        new BucketDeployment(this, 'BucketDeployment', {
+        new BucketDeployment(this, 'DeployWithInvalidation', {
             sources: [Source.asset(path)],
             destinationBucket: hostingBucket,
             distribution,
