@@ -15,6 +15,7 @@ export default function Products() {
   }
 
 
+
   return (
     <Grid container spacing={4}>
       {data.data.map(({ count, ...product }, index) => (
@@ -29,7 +30,7 @@ export default function Products() {
             />
             <CardContent sx={{ flexGrow: 1 }}>
               <Typography gutterBottom variant="h5" component="h2">
-                {product.title}
+                {product.name}
               </Typography>
               <Typography>{formatAsPrice(product.price)}</Typography>
             </CardContent>
